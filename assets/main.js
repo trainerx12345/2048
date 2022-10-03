@@ -290,7 +290,7 @@ function keyBoardSwipe(e) {
             right = hasValidMove() ? true : resetMoves()
             checkboard()
         }
-    } else {
+    } else if (e.code == "ArrowUp" || e.code == 'KeyW' || e.code == "ArrowDown" || e.code == 'KeyS') {
         if (e.code == "ArrowUp" || e.code == 'KeyW') {
             slideUp()
             setRandomNum()
@@ -303,6 +303,11 @@ function keyBoardSwipe(e) {
             down = hasValidMove() ? true : resetMoves()
             checkboard()
         }
+    }
+    else  {
+        e.preventDefault();
+        return;
+        
     }
 }
 
