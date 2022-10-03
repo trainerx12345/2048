@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2048</title>
+    <link rel="stylesheet" href="./assets/main.css">
+    <script type="text/javascript" src="./assets/main.js" defer></script>
+
+
+</head>
+
+<body>
+
+    <main id='wrapper'>
+        <div class="header">
+            <h1 class='title'>2048</h1>
+            
+            <div class="user-info">
+                <h2 class='score'>Best: <span id="best">0</span></h2>
+                <h2 class='score'>Score: <span id="score">0</span></h2>
+            </div>
+            <button  class='btn' id='new-game'>NEW GAME</button>
+            <button  class='btn btn-selected' id='easy'>CLASSIC</button>
+            <button  class='btn' id='normal'>5 X 5</button>
+            <button  class='btn' id='hard'>8 X 8</button>
+            <a href="https://2048game.club/" target='_blank'><button  class='btn'>ORIGINAL</button></a> 
+            <div class='manual-container'>
+              <h3 class='manual'><span class='manual-title'>HOW TO PLAY:</span> Use your arrow keys to move the tiles. Until you reach <span class='manual-title'>2048!</span> &nbsp;&nbsp;Based on 2048 of Gabriele Cirulli</h3>
+           
+            </div>
+        </div>
+        <div id="board">
+
+        </div>
+        <div class="sources">
+   
+        </div>
+
+   
+
+        <div class='wrapper-hidden show-div'>
+          <div class='bg-div'>
+            <div class='bg-wrapper'>
+              <h1 id='status'></h1>
+              <h2 class='score'>Your Score: <span id="win-score">0</span></h2>
+
+              <div class="btns">
+                <h2 id='sub-status'></h2> 
+                  <button id='continue' class='btn'>CONTINUE</button>&nbsp;&nbsp;
+                  <button id='newGame' class='btn'>NEW GAME</button>
+                </div>
+            
+            </div>
+          </div> 
+        </div>
+  
+    </main>
+</body>
+
+</html>
